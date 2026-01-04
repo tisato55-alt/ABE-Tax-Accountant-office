@@ -1,0 +1,23 @@
+
+/*
+  This file contains custom styles for the application,
+  including the animated gradient background.
+*/
+body {
+  /* A subtle, professional gradient using the primary color palette. */
+  background: linear-gradient(-45deg, #eff6ff, #dbeafe, #bfdbfe, #93c5fd);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
